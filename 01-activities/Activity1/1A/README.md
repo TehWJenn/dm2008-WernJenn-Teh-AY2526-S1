@@ -1,0 +1,1 @@
+This is my activity 1A. Where we practice using shapes in p5.js to create an animal.
