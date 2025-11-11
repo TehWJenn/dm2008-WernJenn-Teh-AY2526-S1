@@ -3,17 +3,10 @@ let connectBtn;
 
 let sensorVal, circleSize;
 let ellipseX;
-let ellipseCol = 255;
+let ellipseCol = '#7351daff';
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-
-for (let j = 0; j < 50; j++) {
-    for (let i = 0; i < 50; i++) {
-      fill(ellipseCol);
-      ellipseX = ellipse(i * 30, j * 30, 30);
-    }
-  }
 
   port = createSerial(); // creates the Serial Port
 
@@ -24,29 +17,35 @@ for (let j = 0; j < 50; j++) {
 }
 
 function draw() {
-  background(100);
- 
+  background(0, 50);
+
+  for (let j = 0; j < 50; j++) {
+    for (let i = 0; i < 50; i++) {
+      fill(ellipseCol);
+      ellipseX = ellipse(i * 30, j * 30, circleSize);
+    }
+  }
 
   // Receive data from Arduino
   if (port.opened()) {
     sensorVal = port.readUntil("\n");
     // Only log data that has information, not empty signals
     if (sensorVal[0]) {
-      console.log(sensorVal);
+      // console.log(sensorVal);
       // Update circle's size with sensor's data
       // Reduce delay() value in Ardiuno to get smoother changes
       circleSize = sensorVal;
       ellipseX = map(sensorVal, 2, 500, 200, width);
-            ellipseCol = map(sensorVal, 2, 100, 255, 0);
+      // ellipseCol = map(sensorVal, 2, 100,);
 
 
 
     }
   }
 
-    fill(ellipseCol,0,0);
-    noStroke();
-    ellipse(ellipseX, height / 2, circleSize);
+    // fill(ellipseCol,0,0);
+    // noStroke();
+    // ellipse(ellipseX, height / 2, circleSize);
     
   }
 
