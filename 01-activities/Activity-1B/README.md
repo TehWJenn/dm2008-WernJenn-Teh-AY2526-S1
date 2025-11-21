@@ -1,1 +1,3 @@
-This is Activity 1B...
+This is Activity 1B where we explore the mechanics of p5.js, applying the new code techniques we learnt in this Activity such as basic aniamtion,opacity(alpha), randomness, mouseX&Y  to create an interactioon that reflects my  design asthetics.
+
+For me though in this activity I was just having fun exploring the many codes and coming up with an interesting activity that I would enjoy to play with. As such it is colourful and very active moving. 

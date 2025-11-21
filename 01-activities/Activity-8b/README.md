@@ -1,0 +1,1 @@
+This Activity 8b is building upon the previous activty, here now we learnt how to read feedback of data given through pressure sensor and sound sensor.

@@ -1,1 +1,2 @@
-This is Activity 2B ...
+This is Activity 2B we played with patterns. In this activity I explored the may ways I can manipulate the pattern, like colours that increase in saturation and opacity further down the pattern. 
+Also changing the shape size/length with opacity alpha() to create another different pattern.

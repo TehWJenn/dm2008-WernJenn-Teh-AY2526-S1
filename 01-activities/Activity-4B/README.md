@@ -1,1 +1,2 @@
-This is Activity 4B ...
+This is Activity 4B objects in motion where I learnt how to manipulate the balls in motion where perhaps it passes a certain y axis it speeds up faster then the rest.
+Also if I touches a certain edge it dissapears or bounced off.

@@ -1,1 +1,3 @@
-This is Activity 2A ...
+This is Activity 2A  where we learnt how to use mode switch() in keypress and if..else.
+For this activity I used switch() to give a few keys different functions such as different background and speed of the moving ball.
+I also used if and else under mouseIsPressed to increase the size of the ball and create a ball that flashes a different colour depending on the location of x-axis the canvas you press.

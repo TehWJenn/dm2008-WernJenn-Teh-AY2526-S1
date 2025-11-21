@@ -25,19 +25,24 @@ function draw() {
     x = 0;
   }
 
-  if (mouseIsPressed && mouseX < 150 && mouseY < 200){
+  if (mouseIsPressed && mouseX < 150) {
     fill(20, 300, 40);
     ellipse(x, height / 2, size ++);
   }
+  else if (mouseIsPressed && mouseX < 150 === mouseX > 250) {
+    fill(250, 30, 200);
+    ellipse(x, height / 2, size);
+  } 
   else {
     fill(0);
-    size = 50
+    size = 50;
     ellipse(x, height / 2, size);
-  
   }
-     
-    
-      
+
+  ellipse(x, height / 2, size);
+  
+
+ 
   // if (mouseIsPressed && mouseX < 150 && mouseY < 200) {
   //   fill(244, 0, 9);
   // } else if (mouseIsPressed && mouseX > 200 && mouseY > 300) {
@@ -48,7 +53,7 @@ function draw() {
   //   fill(0);
   // }
 
-//ellipse(x, height / 2, size);
+  //ellipse(x, height / 2, size);
 
   //   if (keyIsPressed) {
   //     if (keyCode === ENTER){
@@ -92,27 +97,27 @@ function draw() {
   // - Draw a rect instead of an ellipse when mouseIsPressed.
 }
 
-// // --- Mode switching with number keys: 1, 2, 3 ---
-// function keyPressed() {
-//   switch (key) {
-//     case '1':
-//       time = 100/2
-//       bgColor = color(200, 100, 100); // red
-//       break;
-//     case '2':
-//       time = 100
-//       bgColor = color(100, 200, 100); // green
-//       break;
-//     case '3':
-//       time = 30
-//       bgColor = color(100, 100, 200); // blue
-//       break;
-//     default:
-//       time = 2
-//       bgColor = color(220);           // grey
-//   }
-// }
-
-function keyPressed(){
-  saveCanvas("activity1b-image", "jpg");
+// --- Mode switching with number keys: 1, 2, 3 ---
+function keyPressed() {
+  switch (key) {
+    case '1':
+      time = 100/2
+      bgColor = color(200, 100, 100); // red
+      break;
+    case '2':
+      time = 100
+      bgColor = color(100, 200, 100); // green
+      break;
+    case '3':
+      time = 30
+      bgColor = color(100, 100, 200); // blue
+      break;
+    default:
+      time = 2
+      bgColor = color(220);           // grey
+  }
 }
+
+// function keyPressed(){
+//   saveCanvas("activity1b-image", "jpg");
+// }

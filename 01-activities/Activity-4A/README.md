@@ -1,1 +1,2 @@
-This is Activity 4A ...
+This is Activity 4A bake a cookie where we learnt how to use a class and properties within it creating objects of the same class but different property name through 'flavour' such as mint, chocolate, strawberry.
+I learnt how to push these property out and visually display it on the canvas by using show() object anf if/else
